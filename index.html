@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>To do list</title>
+</head>
+<body class="bg-gray-50">
+    <div class="container mx-auto text-center mt-5 shadow-lg rounded-lg pb-7">
+        <div class="p-5" id="input-container">
+            <h1 class="text-3xl text-violet-500 font-bold">To do list</h1>
+            <div class="flex justify-center items-center">
+                <input id="inputBox" class="border rounded-md px-4 py-2 mt-2 bg-[#ffffff]" type="text" placeholder="Add a task ...">
+                <input type="hidden" id="saveIndex">
+                <input id="addBtn" class="border rounded-md px-4 py-2 mt-2 text-white bg-lime-500 cursor-pointer hover:bg-[#60b160]" type="button" value="Add">
+
+                <input id="saveBtn" class="hidden border rounded-md px-4 py-2 mt-2 text-white bg-lime-500 cursor-pointer hover:bg-[#60b160]" type="button" value="Save">
+            </div>
+        </div>
+
+        <table class="mx-auto mt-7 border">
+            <thead>
+                <tr class="border">
+                    <th>Num</th>
+                    <th class="w-64">Task</th>
+                    <th class="w-20">Date</th>
+                    <!-- <th class="w-32">Status</th> -->
+                    <th class="w-32">Edit</th>
+                    <th class="w-32">Delete</th>
+                </tr>
+            </thead>
+            <tbody id="addedTasklist">
+                <!-- <tr>
+                    <td id="serial">1</td>
+                    <td><p class="form-control" name="" id="list" multiple>dfgdg</p></td>
+                    <td id="date"></td>
+                    <td id="check" type="radio" class="hidden cursor-pointer"><button  onclick="check(${index})" class="text-white rounded-md bg-blue-500 px-5 py-2"">do</button></td>
+                    </td>
+                    <td id="uncheck" type="radio" class="cursor-pointer"><button     onclick="uncheck(${index})" class="text-white rounded-md bg-yellow-500 px-5 py-2"">undo</button></td>
+                    <td class="cursor-pointer"><button class="text-white rounded-md bg-green-500 px-5 py-2" id="deleted" type="button">Edit</button></td>
+                    <td id="edit" class="cursor-pointer"><button class="text-white rounded-md bg-red-500 px-5 py-2" type="button">Delete</button></td>
+                </tr> -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
